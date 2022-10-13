@@ -1,0 +1,2847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from flexcoin.ltd/trade/XLM_BTC by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Oct 2022 15:02:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<title>Trade — Flexcoin</title>
+	<meta charset="utf-8">
+	<meta name="csrf-token" content="z98pe82WbZYNpm96sSo0W8i7gE6IJmWPu3uWCV4H">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Our site is a secure platform that makes it easy to buy, sell, and store cryptocurrency like Bitcoin, Ethereum, and more. We are available in over 30 countries worldwide.">
+	<link rel="icon" type="image/png" href="../favicon.png">
+	<link rel="stylesheet" href="../fa/css/all.css">
+	<link rel="stylesheet" href="../css/bootstrap7b30.css?v=4">
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="../js/helpers7b30.js?v=4"></script>
+	
+		
+	<style type="text/css">
+    section {
+        background-color: #f6f6f6;
+        min-height: calc(100vh - 200px);
+        color: #000
+    }
+
+    .container {
+        padding-top: 35px;
+        padding-bottom: 14px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+
+    .box {
+        background-color: #fff
+    }
+
+    .box.chart {
+        -webkit-box-ordinal-group: 2;
+        order: 1;
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        padding: 11.2px
+    }
+
+    .box.chart .box-header {
+        -webkit-box-align: center;
+        align-items: center;
+        padding-bottom: 11.2px
+    }
+
+    .box.chart .box-header,
+    .box.chart .box-header .pair {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start
+    }
+
+    .box.chart .box-header .pair {
+        -webkit-box-align: end;
+        align-items: flex-end;
+        color: #25233a;
+        font-size: 10.5px;
+        font-weight: 600;
+        line-height: 15.75px;
+        margin-right: 15px
+    }
+
+    .box.chart .box-header .pair span {
+        color: #ffaa29;
+        font-size: 17.5px;
+        font-weight: 600;
+        line-height: 1;
+        margin-right: 7px
+    }
+
+    .box.chart .box-header .pair a {
+        margin-right: 7px
+    }
+
+    .box.chart .box-header .items {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        align-items: flex-start
+    }
+
+    .box.chart .box-header .items .item {
+        margin-right: 35px
+    }
+
+    .box.chart .box-header .items .item .name {
+        color: #848ca1;
+        font-size: 9.63333px;
+        font-weight: 600;
+        line-height: 14.45px
+    }
+
+    .box.chart .box-header .items .item .value {
+        color: #25233a;
+        font-size: 11.3833px;
+        font-weight: 600;
+        line-height: 17.0833px;
+        min-width: 70px
+    }
+
+    .box.chart .box-header .items .item .value.green {
+        color: #4aa657
+    }
+
+    .box.chart .box-header .items .item .value.red {
+        color: #c8313e
+    }
+
+    .box.chart .box-body {
+        position: relative;
+        min-height: 200px
+    }
+
+    .box.market {
+        -webkit-box-ordinal-group: 3;
+        order: 2;
+        flex-basis: 100%;
+        margin-bottom: 15px
+    }
+
+    .box.market .box-header {
+        background-color: #f6f6f6
+    }
+
+    .box.market .box-header .bp,
+    .box.market .box-header .bp .tabs {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center
+    }
+
+    .box.market .box-header .bp .tabs .tab {
+        cursor: pointer;
+        background-color: #f2f2f2;
+        border-bottom: none;
+        border-radius: 3px 3px 0 0;
+        text-align: center;
+        padding: 14px 16.8px;
+        margin-right: 10px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        align-items: center;
+        font-size: 13.1333px;
+        font-weight: 600;
+        line-height: 19.7px;
+        color: #848ca1
+    }
+
+    .box.market .box-header .bp .tabs .tab.active {
+        background: #fff;
+        color: #25233a
+    }
+
+    .box.market .box-header .bp .search {
+        position: relative
+    }
+
+    .box.market .box-header .bp .search input {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: #f2f2f2;
+        border-radius: 3px;
+        cursor: text;
+        padding: 7px 14px;
+        font-size: 12.25px;
+        font-weight: 400;
+        line-height: 18.3833px;
+        caret-color: #ffaa29;
+        color: #5c5a76
+    }
+
+    .box.market .box-body {
+        padding: 0 10px
+    }
+
+    .box.market .box-body .tabs {
+        display: -webkit-box;
+        display: flex;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        align-items: center;
+        margin-bottom: 10px
+    }
+
+    .box.market .box-body .tabs .tab {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        font-size: 10.5px;
+        font-weight: 600;
+        color: #848ca1;
+        cursor: pointer;
+        border-bottom: 2px solid transparent
+    }
+
+    .box.market .box-body .tabs .tab.active {
+        color: #25233a;
+        border-bottom: 2px solid #ffaa29
+    }
+
+    .table {
+        position: relative;
+        z-index: 11;
+        border: 2px solid #f2f2f2;
+        background-color: #f9f9f9
+    }
+
+    .container .box .table {
+        background-color: transparent;
+        border: none
+    }
+
+    .box.market .box-body .table {
+        margin-top: 10px
+    }
+
+    .table table {
+        border-collapse: collapse;
+        width: 100%
+    }
+
+    .table thead th {
+        border-bottom: none
+    }
+
+    td,
+    th {
+        padding: 0;
+        border-top: none;
+        vertical-align: middle
+    }
+
+    .table .table-thead thead {
+        display: table;
+        width: 100%;
+        table-layout: fixed
+    }
+
+    .table .table-thead thead tr {
+        background-color: #fff;
+        border-bottom: 1px solid #e9e9e9
+    }
+
+    .table .table-thead thead tr th {
+        text-align: left
+    }
+
+    .box .table .table-thead thead tr th {
+        padding: 3px;
+        color: #25233a;
+        font-size: 10.5px;
+        font-weight: 600;
+        line-height: 15.75px
+    }
+
+    .box.market .box-body .table .td-change,
+    .box.market .box-body .table .td-name,
+    .box.market .box-body .table .td-price,
+    .box.market .box-body .table .td-volume {
+        width: 25%
+    }
+
+    .table .table-tbody {
+        width: 100%;
+        min-height: 450px;
+        max-height: 450px
+    }
+
+    .box .table .table-tbody {
+        width: 100%;
+        min-height: 270px;
+        max-height: 270px;
+        overflow-y: auto
+    }
+
+    .box.market .box-body .table .table-tbody {
+        min-height: 250px;
+        max-height: 250px
+    }
+
+    .table .table-tbody tbody tr {
+        margin-top: 100px;
+        border-bottom: 1px solid #e9e9e9;
+        background-color: #fff;
+        -webkit-transition: all .2s ease-in, background .2s;
+        transition: all .2s ease-in, background .2s
+    }
+
+    .table .table-tbody tbody tr.active .td-name {
+        background: #ffaa29;
+        color: #fff
+    }
+
+    .table .table-tbody tbody tr td {
+        padding: 6px 5px;
+        color: #5c5a76;
+        cursor: pointer;
+        font-size: 10.5px;
+        font-weight: 400;
+        line-height: 10.5px
+    }
+
+    .table .table-tbody tbody tr td.td-name svg {
+        width: 10px;
+        height: 10px;
+        margin-right: 7px
+    }
+
+    .changeRed {
+        color: #c8313e!important
+    }
+
+    .changeGreen {
+        color: #4aa657!important
+    }
+
+    @media (max-width:991px) {
+        .search input {
+            width: 95%
+        }
+        .box.trade.buy {
+            -webkit-box-ordinal-group: 4!important;
+            order: 3!important
+        }
+        .box.trade.buy,
+        .box.trade.sell {
+            flex-basis: 100%!important;
+            margin: 0 0 15px!important
+        }
+        .box.trade.sell {
+            -webkit-box-ordinal-group: 5!important;
+            order: 4!important
+        }
+        .box.orders.history {
+            -webkit-box-ordinal-group: 8!important;
+            order: 7!important
+        }
+        .box.orders.history,
+        .box.orders.orders-4 {
+            flex-basis: 100%!important;
+            margin: 0 0 15px!important
+        }
+        .box.orders.orders-4 {
+            -webkit-box-ordinal-group: 9!important;
+            order: 8!important
+        }
+        .box.chart .box-header .items .item {
+            margin-right: 15px
+        }
+    }
+
+    .box.market .box-body .table.balances .td-balance,
+    .box.market .box-body .table.balances .td-currency,
+    .box.market .box-body .table.balances .td-intrade,
+    .box.market .box-body .table.balances .td-volume {
+        width: 33%
+    }
+
+    .usd_small {
+        font-size: 9.5px;
+        color: #9a9a9a
+    }
+
+    .box.trade.buy {
+        -webkit-box-ordinal-group: 4;
+        order: 3;
+        margin-right: 1%
+    }
+
+    .box.trade.buy,
+    .box.trade.sell {
+        flex-basis: 49%;
+        margin-bottom: 15px
+    }
+
+    .box.trade.sell {
+        -webkit-box-ordinal-group: 5;
+        order: 4;
+        margin-left: 1%
+    }
+
+    .box.trade .box-header {
+        padding: 10px 13px;
+        margin-bottom: 20px;
+        border-top: 4px solid;
+        color: #25233a;
+        font-size: 13.1333px;
+        font-weight: 600;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center
+    }
+
+    .box.trade.buy .box-header {
+        background-color: rgba(74, 166, 87, .1);
+        border-color: rgba(74, 166, 87, .1)
+    }
+
+    .box.trade.sell .box-header {
+        background-color: rgba(200, 49, 62, .1);
+        border-color: rgba(200, 49, 62, .1)
+    }
+
+    .box.trade .box-header .balance {
+        color: #848ca1;
+        font-size: 10.5px;
+        font-weight: 600;
+        line-height: 15.75px
+    }
+
+    .box.trade .box-header .balance span {
+        color: #25233a;
+        font-size: 10.5px;
+        font-weight: 600;
+        line-height: 15.75px
+    }
+
+    .box.trade .box-body {
+        padding: 0 11.2px 11.2px
+    }
+
+    .box.trade .box-body .form-group {
+        position: relative;
+        padding: 5px 0;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center
+    }
+
+    .box.trade .box-body .form-group label {
+        color: #25233a;
+        flex-basis: 25%;
+        font-size: 10.5px;
+        font-weight: 600;
+        line-height: 15.75px
+    }
+
+    .box.trade .box-body .form-group .form-control {
+        width: 100%;
+        border: 1px solid #e9e9e9;
+        outline: none;
+        padding: 4.33333px;
+        -webkit-transition: all .3s cubic-bezier(.7, -.38, .23, 1.37);
+        transition: all .3s cubic-bezier(.7, -.38, .23, 1.37);
+        background-color: #f3f3f3;
+        color: #848ca1;
+        font-size: 10.5px;
+        font-weight: 400;
+        line-height: 10.5px;
+        height: 22.66px!important;
+        border-radius: 0!important
+    }
+
+    .box.trade .box-body .form-group .currency {
+        position: absolute;
+        padding: 4.2px;
+        color: #848ca1;
+        font-size: 10.5px;
+        font-weight: 300;
+        line-height: 10.5px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .box.trade .box-body .ft {
+        margin-top: 70px
+    }
+
+    .box.trade .box-body .ft .btn {
+        margin-left: auto;
+        max-width: 200px;
+        width: 200px;
+        display: -webkit-box;
+        display: flex;
+        font-size: 9.63333px;
+        line-height: 9.63333px;
+        text-transform: uppercase;
+        padding: 9.8px 0
+    }
+
+    .box.trade .box-body .ft .btn,
+    .btn {
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        font-weight: 400
+    }
+
+    .btn {
+        font-family: Arial, sans-serif;
+        background: #eee;
+        padding: 11.2px 35px;
+        font-size: 14px;
+        line-height: 14px;
+        display: -webkit-inline-box;
+        display: inline-flex;
+        cursor: pointer;
+        border: none;
+        outline: none
+    }
+
+    .btn.btn-green {
+        border: 1px solid #4aa657;
+        background-color: #4aa657;
+        border-radius: 4px
+    }
+
+    .btn.btn-green,
+    .btn.btn-red {
+        color: #fff;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+        transition: background .2s, transform .2s cubic-bezier(.165, .84, .44, 1), box-shadow .3s cubic-bezier(.165, .84, .44, 1), background-color .2s, -webkit-transform .2s cubic-bezier(.165, .84, .44, 1)
+    }
+
+    .btn.btn-red {
+        border: 1px solid #c8313e;
+        background-color: #c8313e;
+        border-radius: 4px
+    }
+
+    .box.orders {
+        padding: 10px
+    }
+
+    .box.orders.history {
+        flex-basis: 49%;
+        -webkit-box-ordinal-group: 8;
+        order: 7;
+        margin-bottom: 15px;
+        margin-right: 1%
+    }
+
+    .box.orders .box-header {
+        height: 37px;
+        margin-bottom: 8.4px;
+        color: #25233a;
+        display: -webkit-box;
+        display: flex;
+        font-size: 13.1333px;
+        font-weight: 600;
+        line-height: 37px
+    }
+
+    .box.orders .box-body .table {
+        border-top: 1px solid #e9e9e9
+    }
+
+    .box.orders .box-body .table .table-tbody {
+        min-height: 250px;
+        max-height: 250px
+    }
+
+    .box.orders.history .box-body .table .td-time,
+    .box.orders.history .box-body .table .td-type {
+        width: 20%
+    }
+
+    .box.orders.history .box-body .table .table-tbody tbody tr.tsell td {
+        color: #c8313e
+    }
+
+    .box.orders.history .box-body .table .table-tbody tbody tr.tbuy td {
+        color: #4aa657
+    }
+
+    .box.orders.history .box-body .table .td-price-2 {
+        width: 30%
+    }
+
+    .box.orders.history .box-body .table .table-tbody tbody tr.tbuy .td-time,
+    .box.orders.history .box-body .table .table-tbody tbody tr.tsell .td-time {
+        color: #5c5a76!important
+    }
+
+    .box.orders.orders-4 {
+        flex-basis: 49%;
+        -webkit-box-ordinal-group: 9;
+        order: 8;
+        margin-left: 1%;
+        margin-bottom: 15px
+    }
+
+    .table-tbody.empty .empty {
+        color: #757d91;
+        font-size: 11.3833px;
+        font-weight: 400
+    }
+
+    .table-tbody.empty {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center
+    }
+
+    .ft .message {
+        color: #5c5a76;
+        font-size: 11.3833px;
+        font-weight: 400;
+        line-height: 17.0833px;
+        text-align: center
+    }
+
+    .td-action {
+        padding: 6px 3px!important;
+        width: 10% !important;
+        text-decoration: underline
+    }
+
+    .box.orders.orders-4 .box-body .table .td-price-2,
+    .box.orders.orders-4 .box-body .table .td-time,
+    .box.orders.orders-4 .box-body .table .td-type {
+        padding: 3px;
+        width: 20%
+    }
+
+    .box.orders.orders-4 .box-body .table .table-tbody tbody tr.tsell td {
+        color: #c8313e
+    }
+
+    .box.orders.orders-4 .box-body .table .table-tbody tbody tr.tbuy td {
+        color: #4aa657
+    }
+
+    .box.orders.orders-4 .box-body .table .table-tbody tbody tr.tbuy .td-action,
+    .box.orders.orders-4 .box-body .table .table-tbody tbody tr.tbuy .td-time,
+    .box.orders.orders-4 .box-body .table .table-tbody tbody tr.tsell .td-action,
+    .box.orders.orders-4 .box-body .table .table-tbody tbody tr.tsell .td-time {
+        color: #5c5a76!important
+    }
+
+    .td-action,
+    .td-price-2,
+    .td-time,
+    .td-type {
+        vertical-align: middle
+    }
+    .container {
+        padding-bottom: 61px
+    }
+
+    section .container a {
+        color: #007bff;
+        font-size: unset;
+    }
+
+    a:hover {
+        color: #ffaa29
+    }
+
+    .link {
+        padding: 5px
+    }
+    .table-tbody.empty .empty {
+	    color: #757d91;
+	    font-size: 11.3833px;
+	    font-weight: 400;
+	}
+</style>
+
+	
+</head>
+<body>
+
+	
+	<div id="__layout">
+		<div>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+				<div class="d-flex align-items-center nuxt-link-exact-active nuxt-link-active">
+					<img width="25" src="../_nuxt/img/21c381e.png" alt="" class="mr-2">
+					<a href="../index.html" class="navbar-brand mr-2">Flexcoin</a>
+				</div>
+				<div class="ml-auto row m-0 position-relative d-lg-none" style="align-items: center;">
+
+					
+					<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed">
+						<i class="fa fa-question-circle d-none" style="position: absolute;top: 0;right: 2px;font-size: 15px;z-index: 9;"></i>
+						<span class="icon-bar top-bar" style="margin: 0;"></span> 
+						<span class="icon-bar middle-bar"></span> 
+						<span class="icon-bar bottom-bar"></span>
+					</button>
+				</div>
+				<div id="navbarSupportedContent" class="collapse navbar-collapse">
+					<div class="bigMenu">
+						<ul class="navbar-nav mr-auto align-items-center">
+															<li class="nav-item">
+									<a href="ETH_BTC.html" class="nav-link animate activated">Trade</a>
+								</li>
+								<li class="nav-item">
+									<a href="../listing-with-us.html" class="nav-link animate ">Apply to list</a>
+								</li>
+													</ul>
+						<ul class="navbar-nav ml-auto align-items-center">
+
+							
+							<li class="nav-item dropdown">
+								<a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fal fa-question-circle"></i> Help</a>
+								<div class="dropdown-menu">
+																		<div class="dropdown-item">
+										<a href="../faq.html">F.A.Q.</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><i class="fal fa-info-circle"></i> More</a>
+								<div class="dropdown-menu">
+									<div class="dropdown-item">
+										<a href="../about.html">About us</a>
+									</div>
+																		<div class="dropdown-item">
+										<a href="../terms.html">Terms of use</a>
+									</div>
+									<div class="dropdown-item">
+										<a href="../privacy.html">Privacy policy</a>
+									</div>
+								</div>
+							</li>
+
+															<li class="nav-item">
+									<a href="../register.html" class="nav-link animate ">Sign up</a>
+								</li>
+								<li class="nav-item">
+									<a href="../login.html" class="nav-link animate ">Sign in</a>
+								</li>
+													</ul>
+					</div>
+					<div class="smallMenu row m-0">
+
+						
+						<div class="link-block">
+							<a href="ETH_BTC.html" class="link activated">Trade</a>
+						</div>
+													<div class="link-block">
+								<a href="../listing-with-us.html" class="link ">List now</a>
+							</div>
+																			<div class="nav-item dropdown">
+								<a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle link p-0">Help</a>
+								<div class="dropdown-menu sm">
+									<div class="dropdown-item">
+										<a href="../faq.html">F.A.Q.</a>
+									</div>
+								</div>
+							</div>
+							<div class="nav-item dropdown">
+								<a role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle link p-0">More</a>
+								<div class="dropdown-menu sm">
+									<div class="dropdown-item">
+										<a href="../about.html">About us</a>
+									</div>
+									<div class="dropdown-item">
+										<a href="../terms.html">Terms of use</a>
+									</div>
+									<div class="dropdown-item">
+										<a href="../privacy.html">Privacy policy</a>
+									</div>
+								</div>
+							</div>
+							<div class="row m-0 mt-4">
+								<div class="col-6">
+									<a href="../login.html" class="signButton">Sign In</a>
+								</div>
+								<div class="col-6">
+									<a href="../register.html" class="signButton">Sign Up</a>
+								</div>
+							</div>
+											</div>
+				</div>
+			</nav>
+
+			
+    
+    <section>
+        <div class="container">
+            <div class="box chart mt-5" style="max-width: 100%; overflow: hidden;">
+                <div class="box-header">
+                    <div class="pair"><span>XLM</span> <a>/</a>BTC </div>
+                    <div class="items">
+                        <div class="item price">
+                            <div class="name">Price:</div>
+                            <div class="value">0.000000</div>
+                        </div>
+                        <div class="item change">
+                            <div class="name">Change:</div>
+                            <div class="value green"> 0.00% </div>
+                        </div>
+                        <div class="item vol24">
+                            <div class="name">Vol 24h:</div>
+                            <div class="value">0.00000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div id="chart"></div>
+                </div>
+            </div>
+            <div class="box market">
+                <div class="box-header">
+                    <div class="bp">
+                        <div class="tabs">
+                            <div class="tab active">
+                                <svg width="15" height="12" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="TabbedBlock__icon mr-1">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.328 0h1.51v13.5h-1.51V0zM0 6.5h1.51v7H0v-7zM10.266 5h-1.51v8.5h1.51V5zm2.818-2h1.51v10.5h-1.51V3z"></path>
+                                </svg> Market </div>
+                            <div class="tab">
+                                <svg width="15" height="12" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="TabbedBlock__icon mr-1">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M13.792 7.1c0-3.2-2.617-5.8-5.837-5.8-3.22 0-5.838 2.6-5.838 5.8 0 3.2 2.617 5.8 5.838 5.8 3.22 0 5.837-2.6 5.837-5.8zM.91 7c0-3.9 3.12-7 7.045-7S15 3.1 15 7s-3.12 7-7.045 7S.91 10.9.91 7zm8.353.1c0-.7-.604-1.3-1.308-1.3-.705 0-1.208.5-1.208 1.2s.503 1.4 1.208 1.4c.704 0 1.308-.6 1.308-1.3zM5.44 7c0-1.4 1.107-2.5 2.516-2.5S10.47 5.6 10.47 7 9.364 9.5 7.955 9.5c-1.41 0-2.516-1.1-2.516-2.5z"></path>
+                                </svg> Balances </div>
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Search" value="" name="market_search">
+                        </div>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="tab_body">
+                        <div class="tabs">
+                            <div class="tab active">BTC</div>
+                            <div class="tab">ETH</div>
+                            <div class="tab">USDC</div>
+                            <div class="tab">USDT</div>
+                        </div>
+                        <div class="table">
+                            <div class="table-thead">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="td-name">Market</th>
+                                            <th class="td-price">Price</th>
+                                            <th class="td-volume">Volume</th>
+                                            <th class="td-change">Change</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table-tbody">
+                                <table>
+                                    <tbody>
+                                        <tr class="" data-ticker="ETHBTC" data-url="ETH_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ETH </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ADABTC" data-url="ADA_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ADA </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="XRPBTC" data-url="XRP_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XRP </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BNBBTC" data-url="BNB_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BNB </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="FTMBTC" data-url="FTM_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> FTM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LINKBTC" data-url="LINK_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LINK </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LTCBTC" data-url="LTC_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LTC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="DOGEBTC" data-url="DOGE_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> DOGE </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="EOSBTC" data-url="EOS_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> EOS </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ETCBTC" data-url="ETC_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ETC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BCHBTC" data-url="BCH_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BCH </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ATOMBTC" data-url="ATOM_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ATOM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="NEOBTC" data-url="NEO_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> NEO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="active" data-ticker="XLMBTC" data-url="XLM_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XLM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ALGOBTC" data-url="ALGO_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ALGO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="TRXBTC" data-url="TRX_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> TRX </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="WAVESBTC" data-url="WAVES_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> WAVES </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ZECBTC" data-url="ZEC_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ZEC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ONTBTC" data-url="ONT_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ONT </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BATBTC" data-url="BAT_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BAT </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ANKRBTC" data-url="ANKR_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ANKR </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ONEBTC" data-url="ONE_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ONE </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="GTOBTC" data-url="GTO_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> GTO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="DUSKBTC" data-url="DUSK_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> DUSK </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="PERLBTC" data-url="PERL_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> PERL </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="TOMOBTC" data-url="TOMO_BTC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> TOMO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-tbody" style="display:none;">
+                                <table>
+                                    <tbody>
+                                        <tr class="" data-ticker="BNBETH" data-url="BNB_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BNB </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LINKETH" data-url="LINK_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LINK </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ADAETH" data-url="ADA_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ADA </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="XRPETH" data-url="XRP_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XRP </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LTCETH" data-url="LTC_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LTC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="NEOETH" data-url="NEO_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> NEO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ETCETH" data-url="ETC_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ETC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="EOSETH" data-url="EOS_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> EOS </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="TRXETH" data-url="TRX_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> TRX </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="XLMETH" data-url="XLM_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XLM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ONTETH" data-url="ONT_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ONT </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ZECETH" data-url="ZEC_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ZEC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="WAVESETH" data-url="WAVES_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> WAVES </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BATETH" data-url="BAT_ETH.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BAT </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-tbody" style="display:none;">
+                                <table>
+                                    <tbody>
+                                        <tr class="" data-ticker="BTCUSDC" data-url="BTC_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BTC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ETHUSDC" data-url="ETH_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ETH </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ADAUSDC" data-url="ADA_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ADA </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="XRPUSDC" data-url="XRP_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XRP </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BNBUSDC" data-url="BNB_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BNB </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LINKUSDC" data-url="LINK_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LINK </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="EOSUSDC" data-url="EOS_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> EOS </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LTCUSDC" data-url="LTC_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LTC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BCHUSDC" data-url="BCH_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BCH </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="TRXUSDC" data-url="TRX_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> TRX </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ATOMUSDC" data-url="ATOM_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ATOM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="NEOUSDC" data-url="NEO_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> NEO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ZECUSDC" data-url="ZEC_USDC.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ZEC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-tbody" style="display:none;">
+                                <table>
+                                    <tbody>
+                                        <tr class="" data-ticker="BTCUSDT" data-url="BTC_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BTC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ETHUSDT" data-url="ETH_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ETH </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="XRPUSDT" data-url="XRP_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XRP </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="FTMUSDT" data-url="FTM_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> FTM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BNBUSDT" data-url="BNB_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BNB </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ADAUSDT" data-url="ADA_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ADA </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="DOGEUSDT" data-url="DOGE_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> DOGE </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="EOSUSDT" data-url="EOS_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> EOS </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ETCUSDT" data-url="ETC_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ETC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LINKUSDT" data-url="LINK_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LINK </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="LTCUSDT" data-url="LTC_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> LTC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BCHUSDT" data-url="BCH_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BCH </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="NEOUSDT" data-url="NEO_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> NEO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="USDCUSDT" data-url="USDC_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> USDC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ATOMUSDT" data-url="ATOM_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ATOM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="TRXUSDT" data-url="TRX_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> TRX </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="XLMUSDT" data-url="XLM_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> XLM </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ALGOUSDT" data-url="ALGO_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ALGO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ONTUSDT" data-url="ONT_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ONT </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ZECUSDT" data-url="ZEC_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ZEC </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ANKRUSDT" data-url="ANKR_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ANKR </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="ONEUSDT" data-url="ONE_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> ONE </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="WAVESUSDT" data-url="WAVES_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> WAVES </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="BATUSDT" data-url="BAT_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> BAT </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="TOMOUSDT" data-url="TOMO_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> TOMO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="GTOUSDT" data-url="GTO_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> GTO </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="PERLUSDT" data-url="PERL_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> PERL </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                        <tr class="" data-ticker="DUSKUSDT" data-url="DUSK_USDT.html">
+                                            <td class="td-name">
+                                                <svg aria-labelledby="svg-inline--fa-title-boAibtaZXbjl" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="MarketList__prefixRowIcon mr-2 svg-inline--fa fa-star fa-w-18">
+                                                    <path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+                                                </svg> DUSK </td>
+                                            <td class="td-price">0.000000</td>
+                                            <td class="td-volume">0.00</td>
+                                            <td class="td-change">0.00%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_body" style="display:none;">
+                        <div class="table balances">
+                            <div class="table-thead">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="td-currency">Currency</th>
+                                            <th class="td-balance">Available</th>
+                                            <th class="td-intrade">In Orders</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="table-tbody empty">
+                            		                                <div class="empty">
+	                        	 		<div class="message">
+	                        	 			<a href="../register.html" class="">Sign Up</a> to start trade! Or <a href="../login.html" class="">Sign In</a> if you have an account. 
+	                        	 		</div>
+	                                </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box trade buy" data-symbol="BTC">
+                <div class="box-header">
+                    <div class="title">Buy XLM</div>
+                    <div class="balance">Balance: <span>0.00000</span> BTC</div>
+                </div>
+                <div class="box-body">
+                	<form action="https://flexcoin.ltd/trade" method="post" name="trade">
+                		<input type="hidden" name="is_buyer_maker" value="1">
+                		<input type="hidden" name="first_coin" value="XLM">
+                		<input type="hidden" name="second_coin" value="BTC">
+                		<input type="hidden" name="current_price" value="0">
+	                    <div class="form-group">
+	                        <label>Price</label>
+	                        <input placeholder="" type="text" value="0.000000" class="form-control" name="price">
+	                        <div class="currency">BTC</div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label>Amount</label>
+	                        <input placeholder="" type="text" value="0" class="form-control" name="amount">
+	                        <div class="currency">XLM</div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label>Total</label>
+	                        <input placeholder="" value="0.000000" type="text" class="form-control" name="total">
+	                        <div class="currency">BTC</div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label>Total + fee <span>0.05</span>%</label>
+	                        <input readonly placeholder="" type="text" value="0.000000" class="form-control" name="total_fee">
+	                        <div class="currency">BTC</div>
+	                    </div>
+	                    <div class="ft">
+	                        	                        	<div class="message"><a href="../register.html" class="">Sign Up</a> to start trade! Or <a href="../login.html" class="">Sign In</a> if you have an account. </div>
+	                        	                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="box trade sell" data-symbol="XLM">
+                <div class="box-header">
+                    <div class="title">Sell XLM</div>
+                    <div class="balance">Balance: <span>0.00000</span> XLM</div>
+                </div>
+                <div class="box-body">
+                	<form action="https://flexcoin.ltd/trade" method="post" name="trade">
+                		<input type="hidden" name="is_buyer_maker" value="0">
+                		<input type="hidden" name="first_coin" value="XLM">
+                		<input type="hidden" name="second_coin" value="BTC">
+                		<input type="hidden" name="current_price" value="0">
+	                    <div class="form-group">
+	                        <label>Price</label>
+	                        <input placeholder="" type="text" value="0.000000" class="form-control" name="price">
+	                        <div class="currency">BTC</div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label>Amount</label>
+	                        <input placeholder="" type="text" value="0" class="form-control" name="amount">
+	                        <div class="currency">XLM</div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label>Total</label>
+	                        <input placeholder="" type="text" value="0.000000" class="form-control" name="total">
+	                        <div class="currency">BTC</div>
+	                    </div>
+	                    <div class="form-group">
+	                        <label>Total - fee <span>0.05</span>%</label>
+	                        <input readonly placeholder="" type="text" value="0.000000" class="form-control" name="total_fee">
+	                        <div class="currency">BTC</div>
+	                    </div>
+	                    <div class="ft">
+	                    		                        	<div class="message"><a href="../register.html" class="">Sign Up</a> to start trade! Or <a href="../login.html" class="">Sign In</a> if you have an account. </div>
+	                    		                    </div>
+	                </form>
+                </div>
+            </div>
+            <div class="box orders history">
+                <div class="box-header">
+                    <div class="title">Trade history</div>
+                </div>
+                <div class="box-body">
+                    <div class="table">
+                        <div class="table-thead">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="td-time">Time</th>
+                                        <th class="td-type"></th>
+                                        <th class="td-price-2">Price (BTC)</th>
+                                        <th class="td-price-2">Amount (XLM)</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table-tbody">
+                            <table>
+                                <tbody>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tsell">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">SELL</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                    <tr class="tbuy">
+                                        <td class="td-time">00:00:00</td>
+                                        <td class="td-type">BUY</td>
+                                        <td class="td-price-2">0.00000</td>
+                                        <td class="td-price-2">0.00000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box orders orders-4">
+                <div class="box-header">
+                    <div class="title">My Orders</div>
+                </div>
+                <div class="box-body">
+                    <div class="table">
+                        <div class="table-thead">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="td-time">Time</th>
+                                        <th class="td-type"></th>
+                                        <th class="td-price-2">Price (BTC)</th>
+                                        <th class="td-price-2">Amount (XLM)</th>
+                                        <th class="td-action"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table-tbody empty">
+                        	<div class="empty" style="">
+                        		                        			<a href="../register.html" class="">Sign Up</a> to start trade! Or <a href="../login.html" class="">Sign In</a> if you have an account. 
+                        		                        	</div>
+                    		<table style="display: none;">
+								<tbody>
+																		
+								</tbody>
+							</table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+			<div class="vue-notification-group" style="width: 300px; bottom: 0px; right: 0px;">
+				<span></span>
+			</div>
+
+			<footer>
+				<div class="container row m-0 mx-auto">
+					<div class="col-lg-3 col-md-4 col-6 p-2">
+						<span style="color: white;font-weight: 700;font-size:16px;">Trading tools</span>
+						<div class="link">
+							<span>
+								<a href="ETH_BTC.html">Live trading</a>
+							</span>
+						</div>
+											</div>
+					<div class="col-lg-3 col-md-4 col-6 p-2">
+						<span style="color: white;font-weight: 700;font-size:16px;">Special programs</span>
+						<div class="link">
+							<span>
+								<a href="../listing-with-us.html">List apply</a>
+							</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 p-2">
+						<span style="color: white;font-weight: 700;font-size:16px;">Information</span>
+						<div class="link">
+							<span>
+								<a href="../about.html">About us</a>
+							</span>
+						</div>
+						<div class="link">
+							<span>
+								<a href="../terms.html">Terms of use</a>
+							</span>
+						</div>
+						<div class="link">
+							<span>
+								<a href="../privacy.html">Privacy policy</a>
+							</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 p-2"><span style="color: white;font-weight: 700;font-size:16px;">Get help</span>
+												<div class="link">
+							<span>
+								<a href="../faq.html">FAQ</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div style="color:#B8B8B8;text-align:center;background: #13191E;font-size:14px;"><b>© 2022 Flexcoin GROUP PTY LTD.</b></div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+	
+    function numberWithSpaces(x) {
+        var parts = x.toString().split(".");
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        return parts.join(".");
+    }
+
+    let chart;
+
+    let chart_data = [];
+
+    let prices = {};
+
+    let socket = null;
+
+    let balances = JSON.parse('[]');
+
+    const trade_fee = parseFloat('0.05');
+
+    const current_ticker = 'XLMBTC';
+
+
+    let rcobj = {};
+
+    let rc = JSON.parse('[]');
+
+    if(rc.length > 0) {
+        $.each(rc, function(ind, elem) {
+            rcobj[elem['ticker'].replace('_', '')] = {
+                amount: elem['amount'],
+                date_from: elem['date_from'] * 1000,
+                date_to: elem['date_to'] * 1000,
+                dir: elem['dir'],
+            }
+        });
+    }
+
+
+    function connect_ws() {
+        socket = new WebSocket("wss://stream.binance.com/stream");
+
+        let tradeHistoryTable = $(document).find('.orders.history table tbody');
+
+        socket.onopen = function() {
+            socket.send('{"method":"SUBSCRIBE","params":["!ticker@arr"],"id":1}');
+
+            socket.send('{"method":"SUBSCRIBE","params":["xlmbtc@trade"],"id":2}');
+
+            socket.send('{"method":"SUBSCRIBE","params":["xlmbtc@kline_1m"],"id":3}');
+        };
+
+        socket.onclose = function(event) {
+            connect_ws();
+        };
+
+        socket.onmessage = function(event) {
+            let data = JSON.parse(event.data);
+
+            if(data['data'] != undefined) {
+
+            	if(data['stream'] == '!ticker@arr') {
+
+	                $.each(data['data'], function(ind, elem) {
+
+                        let lastPrice = parseFloat(elem.c);
+
+                        if(rcobj[elem.s] != undefined) {
+                            if(rcobj[elem.s]['date_from'] <= elem.C && rcobj[elem.s]['date_to'] >= elem.C) {
+                                if(rcobj[elem.s]['dir'] == '+') {
+                                    lastPrice += parseFloat(rcobj[elem.s]['amount']);
+                                } else {
+                                    lastPrice -= parseFloat(rcobj[elem.s]['amount']);
+                                }
+                            }
+                        }
+
+	                    prices[elem.s] = lastPrice;
+
+	                    if(elem.s == current_ticker) {
+
+	                    	$(document).find('.trade form[name="trade"] input[name="current_price"]').val(lastPrice);
+
+	                        $(document).find('.chart .item.price .value').text(numberWithSpaces(lastPrice));
+
+	                        $(document).find('.chart .item.vol24 .value').text(numberWithSpaces(parseFloat(elem.v)) + ' BTC');
+
+	                        let cls = 'green';
+	                        if(parseFloat(elem.P) < 0) {
+	                            cls = 'red';
+	                        }
+
+	                        $(document).find('.chart .item.change .value').text(parseFloat(elem.P).toFixed(2) + '%').removeClass('red green').addClass(cls);
+	                    }
+
+
+	                    let tr = $(document).find('.market tr[data-ticker="' + elem.s + '"]');
+
+	                    if(tr.length > 0) {
+	                        tr.find('.td-price').text(numberWithSpaces(lastPrice));
+	                        tr.find('.td-volume').text(numberWithSpaces(parseFloat(elem.v).toFixed(2)));
+
+	                        let cls = 'changeGreen';
+	                        if(parseFloat(elem.P) < 0) {
+	                            cls = 'changeRed';
+	                        }
+
+	                        tr.find('.td-change').text(parseFloat(elem.P).toFixed(2) + '%').removeClass('changeRed changeGreen').addClass(cls);
+	                    }
+
+
+	                    $.each(balances, function(i, e) {
+
+							let end = 'USDT';
+
+							if(i == 'BCPT') {
+								end = 'USDC';
+							}
+
+							if(elem.s.indexOf(i + end)+1 == 1) {
+
+								let tr = $(document).find('.market .balances tr[data-ticker="' + i + '"]');
+
+								if(parseFloat(e.trade_balance) > 0) {
+									tr.find('.td-balance .usd_small').text('(' + (parseFloat(e.trade_balance) * lastPrice).toFixed(2) + '$)').show();
+								}
+
+								if(parseFloat(e.order_balance) > 0) {
+									tr.find('.td-intrade .usd_small').text('(' + (parseFloat(e.order_balance) * lastPrice).toFixed(2) + '$)').show();
+								}
+							}
+						});
+	                });
+
+            	} else if(data['stream'] == "xlmbtc@trade") {
+
+                    let price = parseFloat(data['data']['p']);
+
+                    if(rcobj['XLMBTC'] != undefined) {
+                        if(rcobj['XLMBTC']['date_from'] <= data['data']['T'] && rcobj['XLMBTC']['date_to'] >= data['data']['T']) {
+                            if(rcobj['XLMBTC']['dir'] == '+') {
+                                price += parseFloat(rcobj['XLMBTC']['amount']);
+                            } else {
+                                price -= parseFloat(rcobj['XLMBTC']['amount']);
+                            }
+                        }
+                    }
+
+            		let html = '';
+
+            		html += '<tr class="' + (data['data']['m'] == true ? 'tsell' : 'tbuy') + '">';
+                    html += '    <td class="td-time">' + new Date(data['data']['T']).toLocaleTimeString(); + '</td>';
+                    html += '    <td class="td-type">' + (data['data']['m'] == true ? 'SELL' : 'BUY') + '</td>';
+                    html += '    <td class="td-price-2">' + price + '</td>';
+                    html += '    <td class="td-price-2">' + data['data']['q'] + '</td>';
+                    html += '</tr>';
+
+                    tradeHistoryTable.find('tr:first').before(html);
+
+                    tradeHistoryTable.find('tr:last').remove();
+            	
+            	} else if(data['stream'] == "xlmbtc@kline_1m") {
+
+                    let p1 = parseFloat(data['data']['k']['o']);
+                    let p2 = parseFloat(data['data']['k']['h']);
+                    let p3 = parseFloat(data['data']['k']['l']);
+                    let p4 = parseFloat(data['data']['k']['c']);
+
+                    if(rcobj['XLMBTC'] != undefined) {
+                        if(rcobj['XLMBTC']['date_from'] <= data['data']['k']['T'] && rcobj['XLMBTC']['date_to'] >= data['data']['k']['T']) {
+
+                            if(rcobj['XLMBTC']['dir'] == '+') {
+                                p1 += parseFloat(rcobj['XLMBTC']['amount']);
+                                p2 += parseFloat(rcobj['XLMBTC']['amount']);
+                                p3 += parseFloat(rcobj['XLMBTC']['amount']);
+                                p4 += parseFloat(rcobj['XLMBTC']['amount']);
+                            } else {
+                                p1 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                p2 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                p3 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                p4 -= parseFloat(rcobj['XLMBTC']['amount']);
+                            }
+                        }
+                    }
+
+
+            		if(chart_data[chart_data.length-1][0] == data['data']['k']['T']) {
+            			chart_data[chart_data.length-1] = [data['data']['k']['T'], p1, p2, p3, p4];
+            		} else {
+            			chart_data.push([data['data']['k']['T'], p1, p2, p3, p4]);
+
+            			chart_data.shift();
+            		}
+
+            		chart.clearAnnotations();
+
+            		chart.updateSeries([{
+					    data: chart_data
+				  	}], true);
+
+				  	chart.addYaxisAnnotation({
+				  		y: p4,
+			      		width: '110%',
+			      		borderColor: '#00E396',
+			      		label: {
+				        	borderColor: '#00E396',
+				        	style: {
+				          		color: '#fff',
+		          				background: '#00E396',
+		          				cssClass: 'apexcharts-yaxis-annotation-label',
+					        },
+				        	text: parseFloat(p4).toString(),
+				      		offsetX: 60,
+				      		offsetY: 6,
+				      	},
+				  	});
+
+            	}
+
+            }   
+        };
+
+        socket.onerror = function(error) {
+        };
+    }
+
+    function get_prices() {
+        $.ajax({
+            url: 'https://api.binance.com/api/v3/ticker/24hr',
+            method: 'GET',
+            success: function(json) {
+                if(json.length > 0) {
+                    $.each(json, function(ind, elem) {
+
+                        let lastPrice = parseFloat(elem.lastPrice);
+
+                        if(rcobj[elem.symbol] != undefined) {
+                            if(rcobj[elem.symbol]['date_from'] <= elem.closeTime && rcobj[elem.symbol]['date_to'] >= elem.closeTime) {
+                                if(rcobj[elem.symbol]['dir'] == '+') {
+                                    lastPrice += parseFloat(rcobj[elem.symbol]['amount']);
+                                } else {
+                                    lastPrice -= parseFloat(rcobj[elem.symbol]['amount']);
+                                }
+                            }
+                        }
+
+                        prices[elem.symbol] = lastPrice;
+
+                        if(elem.symbol == current_ticker) {
+
+                        	$(document).find('.trade form[name="trade"] input[name="current_price"]').val(lastPrice);
+
+                            $(document).find('.chart .item.price .value').text(numberWithSpaces(lastPrice));
+
+                            $(document).find('.trade input[name="price"]').val(lastPrice);
+
+                            $(document).find('.chart .item.vol24 .value').text(numberWithSpaces(parseFloat(elem.volume)) + ' BTC');
+
+                            let cls = 'green';
+                            if(parseFloat(elem.priceChangePercent) < 0) {
+                                cls = 'red';
+                            }
+
+                            $(document).find('.chart .item.change .value').text(parseFloat(elem.priceChangePercent).toFixed(2) + '%').removeClass('red green').addClass(cls);
+                        }
+
+
+                        let tr = $(document).find('.market tr[data-ticker="' + elem.symbol + '"]');
+
+                        if(tr.length > 0) {
+                            tr.find('.td-price').text(numberWithSpaces(lastPrice));
+                            tr.find('.td-volume').text(numberWithSpaces(parseFloat(elem.volume)));
+
+                            let cls = 'changeGreen';
+                            if(parseFloat(elem.priceChangePercent) < 0) {
+                                cls = 'changeRed';
+                            }
+
+                            tr.find('.td-change').text(parseFloat(elem.priceChangePercent).toFixed(2) + '%').removeClass('changeRed changeGreen').addClass(cls);
+                        }
+                    });
+                }
+            },
+            error: function() {
+                setTimeout(function() {
+                    get_prices();
+                }, 500);
+            }
+        });
+    }
+
+
+    function get_history_prices() {
+
+    	let tradeHistoryTable = $(document).find('.orders.history table tbody');
+
+        $.ajax({
+            url: 'https://api.binance.com/api/v3/aggTrades?symbol=XLMBTC&limit=50',
+            method: 'GET',
+            success: function(json) {
+                if(json.length > 0) {
+                    $.each(json, function(ind, elem) {
+
+                        let price = parseFloat(elem['p']);
+
+                        if(rcobj['XLMBTC'] != undefined) {
+                            if(rcobj['XLMBTC']['date_from'] <= elem['T'] && rcobj['XLMBTC']['date_to'] >= elem['T']) {
+                                if(rcobj['XLMBTC']['dir'] == '+') {
+                                    price += parseFloat(rcobj['XLMBTC']['amount']);
+                                } else {
+                                    price -= parseFloat(rcobj['XLMBTC']['amount']);
+                                }
+                            }
+                        }
+
+
+                        let html = '';
+
+	            		html += '<tr class="' + (elem['m'] == true ? 'tsell' : 'tbuy') + '">';
+	                    html += '    <td class="td-time">' + new Date(elem['T']).toLocaleTimeString(); + '</td>';
+	                    html += '    <td class="td-type">' + (elem['m'] == true ? 'SELL' : 'BUY') + '</td>';
+	                    html += '    <td class="td-price-2">' + price + '</td>';
+	                    html += '    <td class="td-price-2">' + elem['q'] + '</td>';
+	                    html += '</tr>';
+
+	                    tradeHistoryTable.find('tr:first').before(html);
+
+	                    tradeHistoryTable.find('tr:last').remove();
+                    });
+                }
+            },
+            error: function() {
+                setTimeout(function() {
+                    get_history_prices();
+                }, 500);
+            }
+        });
+    }
+
+
+    function chart_init() {
+
+    	var options = {
+    		"series": [
+	    		{
+	    			"data": chart_data
+	    		}
+    		],
+    		"chart": {
+    			"type": "candlestick",
+    			"height": 450,
+    			"toolbar": {
+    				"show": false
+    			},
+    			"zoom": {
+          			"enabled": false,
+          		},
+    		},
+    		"xaxis": {
+    			"type": "datetime",
+    			
+    		},
+    		"yaxis": {
+    			tooltip: {
+		          	enabled: true,
+		          	offsetX: 0,
+		      	},
+    			opposite: true,
+    			crosshairs: {
+		          	show: true,
+		      	},
+    		},
+    		noData: {
+			    text: 'Loading...'
+		  	},
+		  	grid: {
+			    show: true,
+			    borderColor: '#e8e8e8',
+			    strokeDashArray: 1,
+			    position: 'back',
+			    xaxis: {
+			        lines: {
+			            show: true
+			        }
+			    },   
+			    yaxis: {
+			        lines: {
+			            show: true
+			        }
+			    },  
+			},
+			annotations: {
+				position: 'front',
+			},
+    	};
+
+        chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+    	$.ajax({
+            url: 'https://api.binance.com/api/v3/klines?symbol=XLMBTC&interval=1m&limit=150',
+            method: 'GET',
+            success: function(json) {
+                if(json.length > 0) {
+
+                    let first = true;
+
+                    $.each(json, function(ind, elem) {
+
+                        let p1 = parseFloat(elem[1]);
+                        let p2 = parseFloat(elem[2]);
+                        let p3 = parseFloat(elem[3]);
+                        let p4 = parseFloat(elem[4]);
+
+                        if(rcobj['XLMBTC'] != undefined) {
+                            if(rcobj['XLMBTC']['date_from'] <= elem[6] && rcobj['XLMBTC']['date_to'] >= elem[6]) {
+
+                                if(first == true && ind != 0) {
+
+                                    if(rcobj['XLMBTC']['dir'] == '+') {
+                                        p2 += parseFloat(rcobj['XLMBTC']['amount']);
+                                        p4 += parseFloat(rcobj['XLMBTC']['amount']);
+                                    } else {
+                                        p2 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                        p4 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                    }
+
+                                } else {
+
+                                    if(rcobj['XLMBTC']['dir'] == '+') {
+                                        p1 += parseFloat(rcobj['XLMBTC']['amount']);
+                                        p2 += parseFloat(rcobj['XLMBTC']['amount']);
+                                        p3 += parseFloat(rcobj['XLMBTC']['amount']);
+                                        p4 += parseFloat(rcobj['XLMBTC']['amount']);
+                                    } else {
+                                        p1 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                        p2 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                        p3 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                        p4 -= parseFloat(rcobj['XLMBTC']['amount']);
+                                    }
+                                }
+
+                       	 		first = false;
+                            }
+                        }
+
+						chart_data.push([elem[6], p1, p2, p3, p4]);  
+                    });
+
+				  	chart.updateSeries([{
+					    data: chart_data
+				  	}], true);
+
+				  	chart.addYaxisAnnotation({
+				  		y: chart_data[chart_data.length-1][4],
+			      		width: '110%',
+			      		borderColor: '#00E396',
+			      		label: {
+				        	borderColor: '#00E396',
+				        	style: {
+				          		color: '#fff',
+		          				background: '#00E396',
+		          				cssClass: 'apexcharts-yaxis-annotation-label',
+					        },
+				        	text: parseFloat(chart_data[chart_data.length-1][4]).toString(),
+				      		offsetX: 60,
+				      		offsetY: 6,
+				      	},
+				  	});
+                }
+            }
+        });
+    }
+
+
+    $(document).ready(function() {
+
+        get_prices();
+
+        get_history_prices();
+
+        connect_ws();
+
+        chart_init();
+
+        $(document).on('click', '.market .box-header .tabs .tab', function() {
+            let parent = $(this).parent();
+
+            let market_box = $(this).parents('.market');
+
+            parent.find('.tab.active').removeClass('active');
+
+            $(this).addClass('active');
+
+            market_box.find('.box-body .tab_body').hide();
+
+            $(market_box.find('.box-body .tab_body')[$(this).index()]).show();
+        });
+
+        $(document).on('click', '.market .box-body .tabs .tab', function() {
+            let parent = $(this).parent();
+
+            let tab_body = $(this).parents('.tab_body');
+
+            parent.find('.tab.active').removeClass('active');
+
+            $(this).addClass('active');
+
+            tab_body.find('.table .table-tbody').hide();
+
+            $(tab_body.find('.table .table-tbody')[$(this).index()]).show();
+        });
+
+
+        $(document).on('input', 'input[name="market_search"]', function() {
+        	let search = $(this).val();
+
+        	$(document).find('.market tr[data-ticker]').each(function(ind, elem) {
+        		if($(elem).attr('data-ticker').toLowerCase().indexOf(search)+1 == 1) {
+        			$(elem).show();
+        		} else {
+        			$(elem).hide();
+        		}
+        	});
+        });
+
+
+        $(document).on('submit', 'form[name="trade"]', function(e) {
+        	e.preventDefault();
+
+        	let form = $(this);
+
+            let btn = form.find('button[type="submit"]');
+            
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: form.serialize(),
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $(document).find('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(json) {
+                    if(json['success'] != undefined && json['success'] == true) {
+
+                        if(json['data'] != undefined) {
+                        	if(json['data']['status'] == 1) {
+                        		let html = '';
+
+                        		html += '<tr class="' + (json['data']['is_buyer_maker'] ? 'tbuy' : 'tsell') + '" data-order_id="' + json['data']['order']['id'] + '">';
+								html += '	<td class="td-time" data-timestamp="' + json['data']['order']['created_at_time'] + '">' + json['data']['order']['created_at'] + '</td>';
+								html += '	<td class="td-type">' + (json['data']['is_buyer_maker'] ? 'BUY' : 'SELL') + '</td>';
+								html += '	<td class="td-price-2">' + parseFloat(json['data']['order']['price']).toFixed(5) + '</td>';
+								html += '	<td class="td-price-2">' + parseFloat(json['data']['order']['amount']).toFixed(6) + '</td>';
+								html += '	<td class="td-action"><a>Close</a></td>';
+								html += '</tr>';
+
+								$(document).find('.orders.orders-4').find('.table-tbody').removeClass('empty').find('.empty').hide().parent().find('table tbody').prepend(html).parent().show();
+                        	}
+
+
+                        	$.each(json['data']['balance'], function(ind, elem) {
+                        		$(document).find('.trade[data-symbol="' + ind + '"]').find('.box-header .balance span').text(parseFloat(elem.trade_balance).toFixed(5));
+
+                        		balances[ind]['trade_balance'] = parseFloat(elem.trade_balance).toFixed(5);
+
+                        		balances[ind]['order_balance'] = parseFloat(elem.in_orders).toFixed(5);
+                        		
+                        		$(document).find('.market .balances .table-tbody table tr[data-ticker="' + ind + '"]').find('.td-balance').html(parseFloat(elem.trade_balance).toFixed(5) + '<span class="usd_small" style="display: none;">(0.00$)</span>');
+
+                        		$(document).find('.market .balances .table-tbody table tr[data-ticker="' + ind + '"]').find('.td-intrade').html(parseFloat(elem.in_orders).toFixed(5) + '<span class="usd_small" style="display: none;">(0.00$)</span>');
+                        	});
+
+                        }
+
+                        timesConvert();
+                        
+                        show_notify('success', json['message']);
+                    } else {
+                        show_notify('error', json['message']);
+                    }
+                },
+                error: function() {
+                    show_notify('error', 'System error');
+                },
+                beforeSend: function() {
+                    let old_html = btn.html();
+
+                    btn.attr('disabled', 'disabled').attr('data-old_html', old_html).html('<i class="fas fa-circle-notch fa-spin"></i>');
+                },
+                complete: function() {
+                    let old_html = btn.attr('data-old_html');
+
+                    btn.removeAttr('disabled').removeAttr('data-old_html').html(old_html);
+                }
+            });
+        });
+
+
+        $(document).on('input', 'form[name="trade"] input[name="amount"], form[name="trade"] input[name="price"]', function() {
+        	let type = $(this).parents('.trade').hasClass('buy') ? 1 : 0;
+
+        	let amount = $(this).parents('form').find('input[name="amount"]').val() == '' ? 0 : parseFloat($(this).parents('form').find('input[name="amount"]').val());
+
+        	let price = $(this).parents('form').find('input[name="price"]').val() == 0 ? 0 : parseFloat($(this).parents('form').find('input[name="price"]').val());
+
+        	let total = price * amount;
+
+        	let total_fee = total;
+
+        	if(type) {
+        		total_fee = total_fee + (trade_fee * 0.01 *  total);
+        	} else {
+        		total_fee = total_fee - (trade_fee * 0.01 *  total);
+        	}
+
+        	$(this).parents('form').find('input[name="total"]').val(total.toFixed(6));
+
+        	$(this).parents('form').find('input[name="total_fee"]').val(total_fee.toFixed(6));
+        });
+
+        $(document).on('input', 'form[name="trade"] input[name="total"]', function() {
+        	let type = $(this).parents('.trade').hasClass('buy') ? 1 : 0;
+
+        	let price = $(this).parents('form').find('input[name="price"]').val() == 0 ? 0 : parseFloat($(this).parents('form').find('input[name="price"]').val());
+
+        	let total = $(this).parents('form').find('input[name="total"]').val() == 0 ? 0 : parseFloat($(this).parents('form').find('input[name="total"]').val());
+
+        	let amount = total / price;
+
+        	let total_fee = total;
+
+        	if(type) {
+        		total_fee = total_fee + (trade_fee * 0.01 *  total);
+        	} else {
+        		total_fee = total_fee - (trade_fee * 0.01 *  total);
+        	}
+
+        	$(this).parents('form').find('input[name="amount"]').val(amount.toFixed(6));
+
+        	$(this).parents('form').find('input[name="total_fee"]').val(total_fee.toFixed(6));
+        });
+
+
+        $(document).on('click', '.orders.orders-4 tr td.td-action', function(e) {
+
+        	let tr = $(this).parents('tr');
+
+        	let order_id = tr.attr('data-order_id');
+
+            $.ajax({
+                url: 'https://flexcoin.ltd/close_order',
+                type: 'POST',
+                data: {
+                	order_id: order_id
+                },
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $(document).find('meta[name="csrf-token"]').attr('content')
+                },
+                success: function(json) {
+                    if(json['success'] != undefined && json['success'] == true) {
+
+                    	if(json['data'] != undefined) {
+                    		$.each(json['data']['balance'], function(ind, elem) {
+                        		$(document).find('.trade[data-symbol="' + ind + '"]').find('.box-header .balance span').text(parseFloat(elem.trade_balance).toFixed(5));
+
+                        		balances[ind]['trade_balance'] = parseFloat(elem.trade_balance).toFixed(5);
+
+                        		balances[ind]['order_balance'] = parseFloat(elem.in_orders).toFixed(5);
+                        		
+                        		$(document).find('.market .balances .table-tbody table tr[data-ticker="' + ind + '"]').find('.td-balance').html(parseFloat(elem.trade_balance).toFixed(5) + '<span class="usd_small" style="display: none;">(0.00$)</span>');
+
+                        		$(document).find('.market .balances .table-tbody table tr[data-ticker="' + ind + '"]').find('.td-intrade').html(parseFloat(elem.in_orders).toFixed(5) + '<span class="usd_small" style="display: none;">(0.00$)</span>');
+                        	});
+                    	}
+
+                        tr.remove();
+                        
+                        show_notify('success', json['message']);
+
+                    } else {
+                        show_notify('error', json['message']);
+                    }
+                },
+                error: function() {
+                    show_notify('error', 'System error');
+                }
+            });
+        });
+
+
+        $(document).on('click', '.market table tr[data-ticker]', function(e) {
+        	location.href = $(this).attr('data-url');
+        });
+    });
+</script>
+
+	
+</body>
+
+<!-- Mirrored from flexcoin.ltd/trade/XLM_BTC by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Oct 2022 15:02:09 GMT -->
+</html>
